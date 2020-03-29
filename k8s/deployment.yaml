@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: user-service
+  labels:
+    app: user-service
+    version: 0.1.0
+  namespace: md
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-service
+  template:
+    metadata:
+      labels:
+        app: user-service
+    spec:
+      containers:
+      - name: user-service
+        image: user-service
+        ports:
+        - containerPort: 5004
+        imagePullPolicy: IfNotPresent #For local dev, use local docker repo

@@ -1,0 +1,7 @@
+org\amdocs\elearning\user\service\user\UserDetails.class
+org\amdocs\elearning\user\service\Application.class
+org\amdocs\elearning\user\service\ApplicationConfig.class
+org\amdocs\elearning\user\service\user\User.class
+org\amdocs\elearning\user\service\user\UserType.class
+org\amdocs\elearning\user\service\user\UserController.class
+org\amdocs\elearning\user\service\user\UserService.class
